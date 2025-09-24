@@ -1,0 +1,29 @@
+{
+  "schema": "1.0",
+  "type": "whmcs-gateways",
+  "name": "switchmodule",
+  "license": "MIT",
+  "category": "payments",
+  "description": {
+    "name": "Switch IQ Payment Gateway",
+    "tagline": "A Third Party Payment Gateway Module for WHMCS",
+    "long": "This module integrates the Switch IQ payment gateway into WHMCS, allowing customers to make payments using Switch IQ.",
+    "features": [
+      "Pay using your Switch IQ account",
+      "Secure and reliable transactions",
+      "Easy integration with WHMCS"
+    ]
+  },
+  "logo": {
+    "filename": "logo.png"
+  },
+  "support": {
+    "docs_url": "https://github.com/alsaadii98/whmcs-switch-iq-module"
+  },
+  "authors": [
+    {
+      "name": "alsaadii98",
+      "homepage": "https://github.com/alsaadii98/whmcs-switch-module"
+    }
+  ]
+}
