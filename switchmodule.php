@@ -72,6 +72,8 @@ function switchmodule_config()
 
 function switchmodule_link($params)
 {
+    // Gateway Configuration Parameters
+
     $entityId = $params['EntityID'];
     $token = $params['Token'];
     $paymentType = $params['PaymentType'];
@@ -130,7 +132,7 @@ function switchmodule_link($params)
     curl_close($ch);
 
     $responseData = json_decode($responseData, true);
-    var_dump($responseData); // Debugging line to inspect the response
+
     if (!isset($responseData['id'])) {
         $errorMessage = isset($responseData['result']['description']) ? $responseData['result']['description'] : 'Unknown error';
         return '<div class="alert alert-danger">Error: Unable to create checkout. ' . $errorMessage . '</div>';
@@ -149,6 +151,7 @@ function switchmodule_link($params)
     }
 
     $htmlOutput .= '<script src="' . $scriptSrc . '"></script>';
+
 
     return $htmlOutput;
 }
