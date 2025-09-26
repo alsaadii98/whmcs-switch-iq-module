@@ -11,7 +11,7 @@ The **Switch Payment Gateway Module** seamlessly integrates Switch with WHMCS, a
 ## Installation Guide
 
 1. Navigate to your WHMCS directory.
-2. Move the following files and directories:
+2. Move the following files and directories to `modules/gateways`:
    - `includes/`
    - `switchmodule/`
    - `switchmodule.php`
